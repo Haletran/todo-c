@@ -13,10 +13,8 @@ A simple and efficient command-line interface (CLI) Todo application written in 
 ## Usage
 
 ```bash
-./todo add "Buy groceries"
+./todo add "Fix BUG"
 ./todo list
-./todo complete 1
-./todo delete 2
 ```
 
 ## Installation
