@@ -6,7 +6,7 @@
 #    By: baptiste <baptiste@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/05/23 00:32:01 by baptiste          #+#    #+#              #
-#    Updated: 2024/05/27 00:51:32 by baptiste         ###   ########.fr        #
+#    Updated: 2024/05/27 01:02:03 by baptiste         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -44,6 +44,7 @@ $(NAME): $(OBJS)
 
 clean:
 	rm -f $(OBJS)
+	rm -rf .todo
 	rm -rf $(OBJS_DIR)
 
 fclean: clean
