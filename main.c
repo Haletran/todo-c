@@ -6,7 +6,7 @@
 /*   By: baptiste <baptiste@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/23 00:27:17 by baptiste          #+#    #+#             */
-/*   Updated: 2024/05/27 00:48:37 by baptiste         ###   ########.fr       */
+/*   Updated: 2024/05/27 01:01:12 by baptiste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,6 @@ int main(int argc, char **argv)
     t_lst *todo;
 
     (void)argc;
-    print_banner();
     todo = calloc(1, sizeof(t_lst));
     init_stuff(todo);
     if (argc < 2)

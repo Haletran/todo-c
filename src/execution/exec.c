@@ -6,7 +6,7 @@
 /*   By: baptiste <baptiste@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/23 01:23:27 by baptiste          #+#    #+#             */
-/*   Updated: 2024/05/27 00:39:44 by baptiste         ###   ########.fr       */
+/*   Updated: 2024/05/27 01:01:20 by baptiste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@ int list_exec(t_lst *todo)
     char *line;
     int fd;
 
+    print_banner();
     fd = dup(todo->file_info.file_fd);
     while (1)
     { 
