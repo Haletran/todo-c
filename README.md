@@ -6,9 +6,6 @@ A simple and efficient command-line interface (CLI) Todo application written in 
 
 - Add Tasks: Quickly add new tasks to your todo list.
 - View Tasks: Display all your tasks, including their status (pending/completed).
-- Complete Tasks: Mark tasks as completed.
-- Delete Tasks: Remove tasks from your list.
-- Persistent Storage: Save your tasks to a file for persistent storage across sessions.
 
 ## Usage
 
