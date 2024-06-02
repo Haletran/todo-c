@@ -6,7 +6,7 @@
 /*   By: baptiste <baptiste@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/23 01:23:27 by baptiste          #+#    #+#             */
-/*   Updated: 2024/05/27 01:01:20 by baptiste         ###   ########.fr       */
+/*   Updated: 2024/06/02 15:54:43 by baptiste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,11 +52,36 @@ static int add_exec(char **str, t_lst *todo)
     return (0);
 }
 
+
+//static int done_exec(char **str, t_lst *todo)
+//{
+//    //copy the file element then remove the line and put the result into another file
+//
+//}
+//
+//
+//static int delete_exec(char **str, t_lst *todo)
+//{
+//    // same thing as done but doesn't keep track of the task that have been done
+//}
+
+
+static int reset_exec(t_lst *todo)
+{
+    if (remove(todo->file_info.filename) == 0)
+        printf("TODO reset successfully\n");
+    else
+        printf("TODO reset failed\n");
+    return (SUCCESS);
+}
+
 int exec_command(char **str, t_lst *todo)
 {
     if (todo->option == 1)
         add_exec(str, todo);
     else if (todo->option == 3)
         list_exec(todo);
+    else if (todo->option == 5)
+        reset_exec(todo);
     return (0);    
 }

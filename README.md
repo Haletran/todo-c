@@ -12,6 +12,7 @@ A simple and efficient command-line interface (CLI) Todo application written in 
 ```bash
 ./todo add "Fix BUG"
 ./todo list
+./todo reset
 ```
 
 ## Installation
